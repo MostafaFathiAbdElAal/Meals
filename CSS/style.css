@@ -1,0 +1,154 @@
+/*! Important code */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  background-color: var(--mainColor);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+.fs-8 {
+  font-size: 12px;
+}
+
+.fs-9 {
+  font-size: 10px;
+}
+
+.border-bottom {
+  border-bottom: 1px gray;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a {
+  color: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-wrap: inherit;
+  cursor: inherit;
+  text-decoration: none;
+
+}
+
+/** ====> My root <==== */
+:root {
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --mainColor: #0d0d0d;
+}
+
+/** Sidebar  */
+.mainColSide {
+  margin-left: 5vw;
+}
+
+section ul li:nth-child(1) {
+  transition: transform 600ms;
+  position: relative;
+  top: 200%;
+}
+
+section ul li:nth-child(2) {
+  transition: transform 600ms;
+  position: relative;
+  top: 200%
+}
+
+section ul li:nth-child(3) {
+  transition: transform 600ms;
+  position: relative;
+  top: 200%
+}
+
+section ul li:nth-child(4) {
+  transition: transform 600ms;
+  position: relative;
+  top: 200%
+}
+
+section ul li:nth-child(5) {
+  transition: transform 600ms;
+  position: relative;
+  top: 200%
+}
+
+/** overlay && prevLayer for hover good (not contain padding) */
+.over-lay {
+  background-color: #f9f6f6ca;
+}
+
+.over-lay {
+  transition: translate 450ms ease-out;
+  translate: 0 100%;
+}
+
+.prevLayer:hover .over-lay {
+  translate: 0;
+}
+
+/** loadingScreen */
+#loadingScreen {
+  display: none;
+}
+
+#loadingScreen,
+#loadingScreen0,
+#loadingScreen1,
+#loadingScreen2,
+#loadingScreen3,
+#loadingScreen4,
+#loadingScreen5,
+#loadingScreen6 {
+  background-color: var(--mainColor);
+}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(farthest-side, #fff 94%, #0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%, #fff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn)
+  }
+}
+
+/** input placholder in section search */
+#Search input::placeholder {
+  color: #6c757d;
+}
